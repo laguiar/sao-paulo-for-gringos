@@ -234,19 +234,47 @@ main {
 footer {
     background: #28282b;
     color: white;
-    text-align: center;
     padding: 3rem 2rem;
     margin-top: 6rem;
 }
 
-.footer-content p {
-    margin-bottom: 0.5rem;
-    opacity: 0.7;
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
-.footer-content a {
+.footer-section h3 {
+    color: #007aff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-section p {
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
     color: #007aff;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #0056cc;
 }
 
 /* Responsive Design */
